@@ -2,6 +2,7 @@ package com.example.LabWork1.repository;
 
 import com.example.LabWork1.model.DocumentEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import java.time.Instant;
 import java.util.List;
