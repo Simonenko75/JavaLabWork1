@@ -2,25 +2,30 @@ package com.example.LabWork1.service.dto;
 
 import com.example.LabWork1.model.DocumentType;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.Instant;
 
+@Getter
+@Setter
 public class DocumentEntityDTO {
 
     private Long id;
 
-    private String document_name;
+    private String documentName;
 
     private String login;
 
-    private DocumentType document_type;
+    private DocumentType documentType;
 
-    private String main_text;
-
-    @JsonFormat(shape = JsonFormat.Shape.NUMBER)
-    private Instant created_doc;
+    private String mainText;
 
     @JsonFormat(shape = JsonFormat.Shape.NUMBER)
-    private Instant signed_doc;
+    private Instant createdDoc;
+
+    @JsonFormat(shape = JsonFormat.Shape.NUMBER)
+    private Instant signedDoc;
 
 }

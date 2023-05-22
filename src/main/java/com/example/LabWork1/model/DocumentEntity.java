@@ -2,6 +2,7 @@ package com.example.LabWork1.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -17,22 +18,22 @@ public class DocumentEntity {
     private Long id;
 
     @Column
-    private String document_name;
+    private String documentName;
 
     @Column
     private String login;
 
     @Column
     @Enumerated(EnumType.STRING)
-    private DocumentType document_type;
+    private DocumentType documentType;
 
     @Column
-    private String main_text;
+    private String mainText;
 
     @Column
-    private Instant created_doc;
+    private Instant createdDoc;
 
     @Column
-    private Instant signed_doc;
+    private Instant signedDoc;
 
 }
