@@ -8,7 +8,9 @@ import lombok.Setter;
 public class TestEntityDTO {
 
     private Long id;
+
     private String name;
+
     private int age;
 
 }

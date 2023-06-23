@@ -8,6 +8,7 @@ import lombok.Setter;
 public class TestRequestDTO {
 
     private String textData;
+
     protected Integer numericData;
 
 }
